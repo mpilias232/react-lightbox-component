@@ -10,6 +10,7 @@ export default class ImageModifiers extends React.Component {
     this.handleZoomIn = this.handleZoomIn.bind(this);
     this.handleZoomOut = this.handleZoomOut.bind(this);
     this.handleDownload = this.handleDownload.bind(this);
+    this.handleDelete = this.handleDelete.bind(this);
   }
 
   handleRotateClockwise() {
@@ -33,6 +34,11 @@ export default class ImageModifiers extends React.Component {
     window.open(this.props.currentImage);
   }
 
+  handleDelete() {
+    console.log(this.props.currentImage);
+    this.props.onDelete(this.props.currentImage)
+  }
+
   render() {
     return (
       <div className='lightbox-modifiers-box'>
@@ -41,6 +47,7 @@ export default class ImageModifiers extends React.Component {
         <Button icon="rotate-left" onClick={this.handleRotateCounterclockwise} size={ 34 } hasRipple={ true } />
         <Button icon="rotate-right" onClick={this.handleRotateClockwise} size={ 34 } hasRipple={ true } />
         <Button icon="download" onClick={this.handleDownload} size={ 34 } hasRipple={ true } />
+        <Button icon="delete" onClick={this.handleDelete} size={ 34 } hasRipple={ true } />
       </div>
     )
   }
