@@ -36,7 +36,7 @@ export default class ImageModifiers extends React.Component {
 
   handleDelete() {
     console.log(this.props.currentImage);
-    this.props.onDelete(this.props.currentImage)
+    // this.props.onDelete(this.props.currentImage)
   }
 
   render() {
