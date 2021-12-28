@@ -47,7 +47,7 @@ export default class ImageModifiers extends React.Component {
         <Button icon="rotate-left" onClick={this.handleRotateCounterclockwise} size={ 34 } hasRipple={ true } />
         <Button icon="rotate-right" onClick={this.handleRotateClockwise} size={ 34 } hasRipple={ true } />
         <Button icon="download" onClick={this.handleDownload} size={ 34 } hasRipple={ true } />
-        <Button icon="delete" onClick={this.handleDelete} size={ 34 } hasRipple={ true } />
+        <Button icon="delete" onClick={this.handleDelete} size={ 34 } hasRipple={ false } />
       </div>
     )
   }
