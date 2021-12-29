@@ -158,6 +158,7 @@ export default class Container extends React.Component {
                         showImageModifiers={props.showImageModifiers}
                         toggleControls={this.toggleControls}
                         onDelete={props.onDelete}
+                        toggleLightbox={props.toggleLightbox}
                         title={image.title} />
         </CSSTransitionGroup>
         {leftButton}

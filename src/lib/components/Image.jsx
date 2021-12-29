@@ -237,6 +237,7 @@ export default class ImageContent extends React.Component {
           currentImage={props.src}
           onDelete={props.onDelete}
           title={props.title}
+          toggleLightbox={props.toggleLightbox}
           />
       )
     }
@@ -276,5 +277,6 @@ Image.propTypes = {
   src: PropTypes.string.isRequired,
   showImageModifiers: PropTypes.bool.isRequired,
   onDelete: PropTypes.func,
-  title:PropTypes.string
+  title:PropTypes.string,
+  toggleLightbox: PropTypes.func
 }

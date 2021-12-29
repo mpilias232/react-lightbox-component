@@ -36,6 +36,7 @@ export default class ImageModifiers extends React.Component {
 
   handleDelete() {
     this.props.onDelete(this.props.title);
+    this.props.toggleLightbox();
     // this.props.onDelete(this.props.currentImage)
   }
 
@@ -58,5 +59,6 @@ ImageModifiers.propTypes = {
   handleZoom: PropTypes.func.isRequired,
   currentImage: PropTypes.string.isRequired,
   onDelete: PropTypes.func,
-  title: PropTypes.string
+  title: PropTypes.string,
+  toggleLightbox: PropTypes.func
 }
