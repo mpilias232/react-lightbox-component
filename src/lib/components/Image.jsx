@@ -235,6 +235,7 @@ export default class ImageContent extends React.Component {
           handleRotate={this.handleRotate}
           handleZoom={this.handleZoom}
           currentImage={props.src}
+          onDelete={props.onDelete}
           />
       )
     }
@@ -272,5 +273,6 @@ export default class ImageContent extends React.Component {
 
 Image.propTypes = {
   src: PropTypes.string.isRequired,
-  showImageModifiers: PropTypes.bool.isRequired
+  showImageModifiers: PropTypes.bool.isRequired,
+  onDelete: PropTypes.func
 }

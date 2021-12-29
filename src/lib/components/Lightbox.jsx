@@ -82,5 +82,6 @@ Lightbox.propTypes = {
   thumbnailWidth: PropTypes.string,
   thumbnailHeight: PropTypes.string,
   renderImageFunc: PropTypes.func,
-  renderDescriptionFunc: PropTypes.func
+  renderDescriptionFunc: PropTypes.func,
+  onDelete: PropTypes.func,
 }

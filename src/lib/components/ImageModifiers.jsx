@@ -35,7 +35,7 @@ export default class ImageModifiers extends React.Component {
   }
 
   handleDelete() {
-    console.log(this.props.currentImage);
+    this.props.onDelete();
     // this.props.onDelete(this.props.currentImage)
   }
 
@@ -56,5 +56,6 @@ export default class ImageModifiers extends React.Component {
 ImageModifiers.propTypes = {
   handleRotate: PropTypes.func.isRequired,
   handleZoom: PropTypes.func.isRequired,
-  currentImage: PropTypes.string.isRequired
+  currentImage: PropTypes.string.isRequired,
+  onDelete: PropTypes.func
 }

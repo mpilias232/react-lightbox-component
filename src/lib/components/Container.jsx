@@ -156,7 +156,8 @@ export default class Container extends React.Component {
           <ImageContent key={image.src}
                         src={image.src}
                         showImageModifiers={props.showImageModifiers}
-                        toggleControls={this.toggleControls} />
+                        toggleControls={this.toggleControls}
+                        onDelete={props.onDelete} />
         </CSSTransitionGroup>
         {leftButton}
         {rightButton}
@@ -181,5 +182,6 @@ Container.propTypes = {
   images: PropTypes.array.isRequired,
   toggleLightbox: PropTypes.func.isRequired,
   showImageModifiers: PropTypes.bool,
-  renderDescriptionFunc: PropTypes.func
+  renderDescriptionFunc: PropTypes.func,
+  onDelete: PropTypes.func,
 }
